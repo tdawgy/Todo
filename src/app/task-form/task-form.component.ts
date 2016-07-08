@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { NgForm, Form } from '@angular/forms';
 import { MdInput, MdHint } from '@angular2-material/input';
-import { MdCheckbox } from '@angular2-material/checkbox';
 import { MdButton } from '@angular2-material/button';
 
 import { TaskService } from '../task-service/task.service';
