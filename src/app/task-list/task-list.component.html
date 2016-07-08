@@ -1,0 +1,12 @@
+<div class="card-container">
+  <md-card *ngFor="let task of tasks">
+    <md-card-content (click)="open(task)" title="{{task.task_name}}">
+      {{task.task_name}}
+    </md-card-content>
+    <md-card-actions align="end">
+      <button (click)="delete(task)" md-icon-button>
+        <md-icon>delete</md-icon>
+      </button>
+    </md-card-actions>
+  </md-card>
+</div>

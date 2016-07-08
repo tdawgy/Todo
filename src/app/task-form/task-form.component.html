@@ -1,0 +1,19 @@
+<div class="card-container">
+  <md-card>
+    <md-card-title *ngIf="!task.task_id">Create task</md-card-title>
+    <md-card-title *ngIf="task.task_id">Update task</md-card-title>
+    <md-card-content>
+      <form name="taskForm" (ngSubmit)="save()" #taskForm="ngForm">
+        <div>
+          <md-input class="full-width" placeholder="Name" [(ngModel)]="task.task_name" required name="task_name" maxLength="255" #nameInput>
+            <md-hint align="end">{{nameInput.characterCount}} / {{nameInput.maxLength}}</md-hint>
+          </md-input>
+        </div>
+        <span>
+          <button type="submit" [disabled]="!taskForm.valid || taskForm.pristine" md-raised-button color="primary">Save</button>
+          <button type="reset" (click)="cancel()" md-raised-button>Cancel</button>
+        </span>
+      </form>
+    </md-card-content>
+  </md-card>
+</div>

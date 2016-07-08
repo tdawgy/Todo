@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+	margin: 20px;
+}
+
+md-card {
+	max-height: 120px;
+	max-width: 200px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+md-card >>> md-card-content {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	height: 34px;
+}
+
+md-card >>> md-card-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+md-card >>> md-card-actions {
+	position: relative;
+	bottom: 100%;
+}
+
+md-card-title,
+md-card-content {
+	cursor: pointer;
+}

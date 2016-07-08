@@ -1,0 +1,11 @@
+.md-input-underline {
+	border-color: red;
+}
+
+label.md-input-placeholder {
+	color: red;
+}
+
+.ng-invalid * {
+	color: red;
+}

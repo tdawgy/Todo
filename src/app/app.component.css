@@ -1,0 +1,16 @@
+[md-fab] {
+	position: absolute;
+	top: 40px;
+	right: 2%;
+	z-index: 1;
+	background-color: var(--primary-color);;
+}
+
+md-toolbar.footer {
+	background-color: #494949;
+	color: white;
+	font-size: 15px;
+	position: fixed;
+	bottom: 0;
+	padding: 0 32px;
+}

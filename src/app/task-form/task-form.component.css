@@ -1,0 +1,23 @@
+.alert {
+	color: red;
+}
+
+:host >>> .ng-invalid:not(.ng-untouched) .md-input-underline,
+:host >>> .ng-invalid:not(.ng-untouched) .md-input-placeholder:not(.md-focused) {
+  border-color: red;
+	color: red;
+}
+
+.card-container {
+	background-color: #3667AE;
+	padding: 20px 60px;
+}
+
+md-card {
+	max-width: 500px;
+	margin: auto;
+}
+
+md-input[name="task_name"] md-hint {
+	bottom: -0.3em;
+}
