@@ -1,31 +1,26 @@
 # ToDo
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.9.
+## Running the site
+First you'll need to install the dependencies
+* Ensure you have npm installed
+* open a console window
+* Navigate to /todo
+* use the command "npm install"
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To run the site after dependencies are installed you'll need to use the angular-cli
+* use the command "ng serve"
+* Should be hosted at http://localhost:4200
 
-## Code scaffolding
+## Running the tests
+Running tests is a little inconvenient due to an issue with the current version of angular-cli
+* First ensure you have chrome installed
+* Next you'll need a console window running "ng serve"
+* With a separate console window run "ng test --watch=false"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/route/class`.
+When that completes you should see the message "Executed XX of XX SUCCESS"
 
-## Build
+Code coverage reports are saved to ./todo/coverage/chrome XX.X.XXXX
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Known issues
+* The coverage isn't reporting correctly for the task-service, I wasn't able to determine why. But it may have something to do with using the inject service to initialize the task-service in tests.
+* Sometimes the new task form will show red validation styling too soon. This is a known issue with the angular2 team and is being tracked here: https://github.com/angular/angular/issues/4933
